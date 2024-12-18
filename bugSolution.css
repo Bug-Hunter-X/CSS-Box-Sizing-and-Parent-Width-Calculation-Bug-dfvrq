@@ -1,0 +1,13 @@
+To fix this, ensure the parent element of the `div` has its width explicitly set.  For example:
+
+```css
+div.parent {
+  width: 500px; /* Or any specific width */
+}
+div.child {
+  width: 100%;
+  box-sizing: border-box;
+}
+```
+
+This ensures that the browser can accurately compute the width of the `div` based on the parent's known dimensions.  Alternatively, consider using a flexbox or grid layout for more robust width management.
