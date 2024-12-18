@@ -1,0 +1,3 @@
+This repository demonstrates a subtle CSS bug related to `box-sizing: border-box;` and the calculation of element widths. The bug occurs when a `div` element with `width: 100%;` and `box-sizing: border-box;` is nested within a parent that doesn't have its width explicitly defined.  This can lead to unexpected rendering across different browsers.
+
+The `bug.css` file contains the buggy CSS code, while `bugSolution.css` offers a fix. The solution involves explicitly setting the width of the parent element, ensuring consistent behavior.
