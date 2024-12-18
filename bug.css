@@ -1,0 +1,10 @@
+The following CSS rule may cause unexpected behavior in some browsers:
+
+```css
+div {
+  width: 100%;
+  box-sizing: border-box;
+}
+```
+
+This rule attempts to make the `div` element fill its parent container's width. The `box-sizing: border-box;` property is then used to include padding and border widths within the element's total width. However, if the `div`'s parent doesn't have its width explicitly set, some browsers may struggle to calculate the `div`'s width correctly.
